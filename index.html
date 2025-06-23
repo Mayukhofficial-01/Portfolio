@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">My Portfolio</div>
+            <div class="menu-toggle">☰</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Mayukh Chatterjee</h1>
+            <p>Coding Enthusiast and Web Developer</p>
+            <img src="https://avatars.githubusercontent.com/u/133559478?s=400&u=f088c652ca3eb5820b5f3a9d1b24010f8544cda7&v=4" alt="Profile Picture">
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="card">
+                <h3>Who I Am</h3>
+                <p>I am Mayukh Chatterjee, a second-year Computer Science engineering student proficient in web development (HTML, CSS, JavaScript) and programming (Java, Python, SQL), with a passion for crafting AI-driven solutions like e-commerce platforms and movie recommendation systems. I actively explore cellular automata and supervised learning, contributing to innovative research in asynchronous systems. My hobbies include coding, watching football, listening to music, and painting.</p>
+            </div>
+            <div class="card">
+                <h3>My Mission</h3>
+                <p>To deliver high-quality digital solutions that empower businesses and individuals.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-content">
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>Building responsive and semantic web layouts.</p>
+            </div>
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Creating interactive and dynamic web experiences.</p>
+            </div>
+            <div class="card">
+                <h3>JAVA</h3>
+                <p>Developing modern, JAVA applications.</p>
+            </div>
+            <div class="card">
+                <h3>SQL</h3>
+                <p>Creating, Modifying and Updating Datasets.</p>
+            </div>
+            <div class="card">
+                <h3>Python</h3>
+                <p>Developing Python-based applications and Machine Learning projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-content">
+            <div class="card">
+                <img src="https://www.intellectoutsource.com/blog/images/how-attractive-templates-are-helpful-for-ecommerce-business.jpg" alt="E-commerce Website">
+                <div class="overlay"></div>
+                <h3>E-commerce Platform</h3>
+                <p>A responsive e-commerce website built with React and Node.js.</p>
+            </div>
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D" alt="Portfolio Website">
+                <div class="overlay"></div>
+                <h3>Portfolio Website</h3>
+                <p>A portfolio website showcasing modern UI/UX design.</p>
+            </div>
+            <div class="card">
+                <img src="https://img.freepik.com/free-vector/task-management-app-interface_23-2148681556.jpg" alt="Task Management App">
+                <div class="overlay"></div>
+                <h3>Task Management App</h3>
+                <p>A task management app with real-time updates using Firebase.</p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df" alt="Weather App">
+                <div class="overlay"></div>
+                <h3>SkyForecast Weather</h3>
+                <p>A web app displaying real-time weather data using a public API.</p>
+            </div>
+            <div class="card">
+                <img src="https://storage.googleapis.com/kaggle-datasets-images/3375918/5872805/e6c438e764799de9a90ae10bd32c51cc/dataset-cover.jpg?t=2023-06-08-06-58-37" alt="Movie Recommendation System">
+                <div class="overlay"></div>
+                <h3>CinemaSuggest</h3>
+                <p>A recommendation engine for movies based on user preferences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="chat-bubble">
+        <span>Ask anything about me</span>
+    </div>
+
+    <div class="chat-overlay">
+        <div class="chat-header">
+            <img src="https://avatars.githubusercontent.com/u/133559478?s=400&u=f088c652ca3eb5820b5f3a9d1b24010f8544cda7&v=4" alt="AI Profile">
+            <h3>Portfolio Assistant</h3>
+            <button class="chat-close">✕</button>
+        </div>
+        <div class="chat-messages">
+            <!-- Messages will be appended here -->
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Type a message...">
+            <button>Send</button>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
